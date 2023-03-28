@@ -1,0 +1,32 @@
+{
+  "name": "uniformly-accelerated-motion-calculator",
+  "version": "1.0.0",
+  "description": "Calculate and graph differents params of the uniformly accelerated motion",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauricio2085/Uniformly-Accelerated-Motion-Calculator.git"
+  },
+  "keywords": [
+    "Javascript",
+    "chart.js",
+    "html"
+  ],
+  "author": "Mauricio Ocampo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mauricio2085/Uniformly-Accelerated-Motion-Calculator/issues"
+  },
+  "homepage": "https://github.com/Mauricio2085/Uniformly-Accelerated-Motion-Calculator#readme",
+  "dependencies": {
+    "@cubejs-client/core": "^0.32.12",
+    "chart.js": "^4.2.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

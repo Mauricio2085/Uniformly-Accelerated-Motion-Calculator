@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento uniformemente acelerado</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Movimiento uniformemente acelerado</h1>
+    <div class="main">
+           <form action="/">
+        <label for="velO">Velocidad inicial</label>
+        <input class="data" type="number" id="velO">
+        <label for="velF">Velocidad final</label>
+        <input class="data" type="number" id="velF" value="" >
+        <label for="acel">Aceleración</label>
+        <input class="data" type="number" id="acel" value="">
+        <label for="time">Tiempo</label>
+        <input class="data" type="number" id="time" placeholder="tiempo">
+    <button class="cal" id="cal" type="button">Calcular</button>
+    </form>
+    <div style="width: 800px;"><canvas id="acquisitions"></canvas></div> 
+    </div>
+    
+<div id="solution">
+        
+    </div>
+
+    <script type="module" src="./acquisitions.js"></script>
+</body>
+</html>

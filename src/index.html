@@ -10,22 +10,67 @@
 <body>
     <h1>Movimiento uniformemente acelerado</h1>
         <div class="main">
-            <form action="/">
-                <label for="velO">Velocidad inicial</label>
-                <input class="data" type="number" id="velO">
-                <label for="velF">Velocidad final</label>
-                <input class="data" type="number" id="velF" value="" >
-                <label for="acel">Aceleración</label>
-                <input class="data" type="number" id="acel" value="">
-                <label for="time">Tiempo</label>
-                <input class="data" type="number" id="time" placeholder="tiempo">
-                <button class="cal" id="cal" type="button">Calcular</button>
+            <div class="form-content">
+                <div class="title">
+                    <h2>Ingreso de valores</h2>
+                </div>
+                <form action="/">
+                <div class="form-options">
+                    <div class="subtitle">
+                       <h2>Seleccionar tipo de cálculo</h2> 
+                    </div>
+                    <div class="options">
+                        <label for="velConst">Velocidad constante</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="options">
+                        <label for="velConst">Velocidad inicial</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="options">
+                        <label for="velConst">Velocidad final</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="options">
+                        <label for="velConst">Aceleración constante</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="options">
+                        <label for="velConst">Distancia recorrida</label>
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="form-input-values">
+                    <div class="subtitle">
+                        <h2>Seleccionar tipo de cálculo</h2> 
+                     </div>
+                    <div class="data-values">
+                        <label for="velO">Velocidad inicial</label>
+                        <input class="data" type="number" id="velO">
+                    </div>
+                    <div class="data-values">
+                        <label for="velF">Velocidad final</label>
+                        <input class="data" type="number" id="velF" value="" >
+                    </div>
+                    <div class="data-values">
+                        <label for="acel">Aceleración</label>
+                        <input class="data" type="number" id="acel" value="">
+                    </div>
+                    <div class="data-values">
+                        <label for="time">Tiempo</label>
+                        <input class="data" type="number" id="time">
+                    </div>
+                </div>   
             </form>
-            <div style="width: 800px;">
-                <canvas id="acquisitions">
-                </canvas>
-            </div> 
+            <div class="cal">
+                <button id="cal" type="button">Calcular</button>
+            </div>
         </div>
+        <div class="chart">
+            <canvas id="acquisitions">
+             </canvas>
+        </div> 
+    </div>
     <div id="solution">  
     </div>
 <script type="module" src="./index.js"></script>

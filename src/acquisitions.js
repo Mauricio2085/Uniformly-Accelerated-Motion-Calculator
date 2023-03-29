@@ -2,6 +2,7 @@ import Chart from 'chart.js/auto';
  
  const graph = async (distancia, ArrayTime) => {
   const chartCanva = document.getElementById('acquisitions');
+  chartCanva.setAttribute('class', 'graphic')
   const labels = ArrayTime;
   const data = distancia;// aqui voy
 

@@ -1,6 +1,4 @@
-import Chart from 'chart.js/auto';
 import {graph} from './acquisitions';
-import saludar from './index'
 
 const velO = document.getElementById('velO');
 const velF = document.getElementById('velF');
